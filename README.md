@@ -1,11 +1,16 @@
 # usbLock
 A bash script to lock linux with USB
 
-# Requirements
-xsecurelock
-sox
-lsusb
-usb device
+# Dependencies
+- xsecurelock
+
+- sox
+
+- lsusb
+
+- usb device
+
+Use your favorite package manager (apt, pacman, dnf, etc.) to install the dependencies.
 
 # About
 Runs a loop that checks if a specified USB has been attached. If it hasn't, then a beep is played and xsecurelock is invoked. If you enter your password without reinserting the USB, the loop still runs and keeps you locked out. To remove the lock, reinsert the USB and enter your password.
